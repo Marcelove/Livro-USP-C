@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+main(){
+
+    int c, n;
+    printf("Digite até que número você deseja que eu conte:\n");
+    scanf("%d", &n);
+
+    for (c=1; c<=n; c++) printf("\n%d ", c);
+
+
+
+}

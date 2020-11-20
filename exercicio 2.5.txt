@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+main(){
+
+    int erro;
+    char *x, *y;
+    x = "erro detectado";
+    y = "erros detectados";
+
+    printf("Digite o número de erros detectados:\n");
+    scanf("%d", &erro);
+
+    printf("%d %s", erro, erro == 1 ? x: y);
+
+
+
+}

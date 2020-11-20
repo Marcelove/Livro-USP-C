@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <math.h>
+#include <conio.h>
+
+main(){
+
+    int a,b, be, c,d, t, t2 ,x1, x2;
+
+    printf("Informe os coeficientes de Báskara (a, b e c):");
+    scanf("%d %d %d", &a, &b, &c);
+
+    be = pow(b, 2);
+    t2 = (-4*a) *c;
+
+    t = be + t2;
+
+    d = 2*a;
+
+    x1 = (-b + t)/d;
+    x2 = (-b - t)/d;
+
+    printf("Suas raízes são: %d %d", x1, x2);
+
+
+}
+
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+
+24/12/19 merry christmas bitch
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(){
+
+	float a, b, c, delta, bask1, bask2;
+	printf("Informe os coeficientes A B e C para eu calcular Báskara: \n");
+	scanf("%f %f %f", &a, &b, &c);
+
+	delta = (b*b) - (4*a*c);
+	
+	bask1 = (-b) - (sqrt(delta));
+	bask1 = bask1 / (2*a);
+	
+	bask2 = (-b) + (sqrt(delta));
+	bask2 = bask2 / (2*a);
+
+	printf("As raízes são %f e %f .", bask1, bask2);
+
+
+} 

@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+main(){
+
+    float a, i, p;
+    char s;
+
+    printf("Me informe seu sexo e altura(no formato m ou f):\n");
+    scanf("%c %f", &s, &a, &p);
+
+    switch(s){
+        case 'm': printf("\nSeu peso ideal é %f.\n", 72.7*a-58);break;
+        case 'f': printf("\nSeu peso ideal é %f.\n", 62.1*a-44.7);break;
+    }
+
+}

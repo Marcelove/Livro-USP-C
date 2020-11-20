@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+#include <conio.h>
+
+main (){
+
+    int d, l, m;
+
+    printf("Digite a distância percorrida e a quantidade de litros consumida:\n");
+    scanf("%d %d", &d, &l);
+
+    m = (l/d);
+
+    printf("\nConsumo médio de %d Lts.", m);
+
+    getch();
+
+
+
+
+
+
+
+
+}

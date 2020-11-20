@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+main(){
+
+    int termo, auxiliar, a=0, b=1, c;
+
+    printf("DIgite o termo fibonacci desejado:\n");
+    scanf("%d", &termo);
+
+    for (c=0; c<termo; c++){
+
+        auxiliar = a + b;
+        a = b;
+        b = auxiliar;
+    }
+
+    printf("%d", auxiliar);
+}

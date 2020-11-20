@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <math.h>
+#include <conio.h>
+
+
+main(){
+
+    int i , n, v;
+
+
+    while(i >= 0){
+
+        printf("Tell me your age:\n");
+
+        scanf("%d", &i);
+
+        if (i > v){
+
+            v = i;
+        }
+
+        if (i < n){
+
+            n = i;
+        }
+    }
+     printf("%d é o mais velho e %d é o mais novo!\n", v, n);
+    return 0;
+
+}
+
+fixed that fucking shit motherfucker - 29/12/2019
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+	int a, b, l = 200;
+
+	while (a > 0){
+
+		printf("Digite a idade: \n");
+		scanf("%d", &a);
+
+		if (a != 0){
+
+			if (a > b){
+
+				b = a;
+			}
+
+			if (a < l){
+
+				l = a;
+			}
+		} else {
+
+			printf("%d é o mais velho e %d é o mais novo.", b, l);
+		}
+	}
+}

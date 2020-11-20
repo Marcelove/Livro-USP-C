@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+main(){
+
+    int x, y;
+    char op;
+
+    printf("Digite a expressão desejada, no formato A + B:\n");
+    scanf("%d %c %d", &x, &op, &y);
+
+    switch(op){
+
+        case '+': printf("\nSeu resultado de soma é %d.", x+y);break;
+        case '-': printf("\nSeu resultado de subtração é %d.", x-y);break;
+        case '*': printf("\nSeu resultado de multiplicação é %d.", x*y);break;
+        case '/': printf("\nSeu resultado de divisão é %d", x/y);break;
+        default: printf("Operador inválido %c", op);
+
+    }
+}

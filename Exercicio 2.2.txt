@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <conio.h>
+
+main(){
+    float a,b;
+
+    printf("Digite dois números e eu direi qual é o maior:\n");
+    scanf("%f %f", &a, &b);
+
+    if (a > b){
+        printf("A é maior.");
+    } else {
+        printf("Ou B é maior ou são ambos iguais.");
+    }
+
+
+}

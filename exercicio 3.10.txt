@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <math.h>
+#include <conio.h>
+
+main(){
+
+    int n, d, s = 0;
+
+    printf("Digite o seu número:");
+    scanf("%d", &n);
+
+    if (n >= 999999){
+        printf("\nNúmero inválido!");
+        return 0;
+    }
+    printf("\n Número de conta completo9: ");
+
+    while (n != 0){
+
+
+        d = n%10;
+        n /= 10;
+        s = s + d;
+        printf("%d ", d);
+    }
+
+    printf("- %d", s);
+
+}
+
+mudando pra MELHOR - 27/12/2019
+
+#include <stdio.h> //Input values from keyboard and output values from programs
+#include <stdlib.h> //Memory allocation, process control ...
+
+int main(){
+
+	int u, d, c, m, dm, cm, conta, soma, r;
+	scanf("%d", &conta);
+
+	u = conta % 10;
+	d = ((conta % 100) - u) *0.1;
+	c = ((conta % 1000) - (d + u)) *0.01;
+	m = ((conta % 10000) - (c + d + u)) *0.001;
+	dm = ((conta % 100000) - (m + c + d + u)) *0.0001 ;
+	cm = ((conta % 1000000) - (dm + m + c + d + u)) *0.00001 ;
+
+	soma = (u + d + c + m + dm + cm) ;
+	
+	r = soma % 10;
+
+	printf("Seu número de conta é 00%d - %d", conta, r);
+
+	
+}

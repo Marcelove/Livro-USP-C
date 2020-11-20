@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+#include <conio.h>
+
+main(){
+
+    int c1, c2, h;
+
+    printf("Informe o nome dos catetos 1 e 2:\n");
+    scanf("%d %d", &c1, &c2);
+
+    h = pow(c1, 2) + pow(c2, 2);
+    h = sqrt(h);
+
+    printf("A hipotenusa é: %d ", h);
+
+
+}

@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <math.h>
+
+main(){
+
+    int n, sum=0, q, c;
+    printf("Digite o núemro de compras:\n");
+    scanf("%d", &n);
+
+
+    for(c = 1; c<= n; c++){
+
+        printf("Digite o valor da compra %d:", c);
+        scanf("%d", &q);
+        sum = sum + q;
+
+
+
+    }
+
+    if (sum <50){
+
+        sum = sum * 0.95;
+        printf("Você vai pagar %d.", sum);
+    }
+    else if (50 <= sum < 100){
+
+        sum = sum * 0.90;
+        printf("Você vai pagar %d.", sum);
+    }
+    else if (100 <= sum < 200){
+
+        sum = sum * 0.85;
+        printf("Você vai pagar %d.", sum);
+    }
+    else{
+
+        sum = sum * 0.80;
+        printf("Você vai pagar %d.", sum);
+    }
+
+
+
+}

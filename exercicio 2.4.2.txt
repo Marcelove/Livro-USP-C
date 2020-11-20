@@ -1,0 +1,26 @@
+/* Uma empresa determinou um reajuste salarial de 5% a todo
+os seus funcionários. Além disto, concedeu um abono de R$ 100,00 para aqueles
+que recebem até R$ 750,00. Dado o valor do salário de um funcionário,
+informar para quanto ele será reajustado. */
+
+#include <stdio.h>
+#include <conio.h>
+
+main(){
+
+    float s, r;
+
+    printf("Digite o seu salário atual:\n");
+    scanf("%f", &s);
+
+    if (s <= 750) {
+
+        s = (s * 1.05) + 100;
+        printf("\nSeu salário foi reajustado para: %f", s);
+
+    } else {
+        s = s * 1.05;
+        printf("\nSeu salário foi reajustado para: %f", s);
+    }
+
+}
